@@ -1,0 +1,86 @@
+.container{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 200px 0.5fr 3fr 4fr 5fr 100px;
+	grid-template-areas: 
+" header        .."
+" header        nav"
+" articulos   main"
+" informacion main"
+" contacto    main"
+" footer      footer"
+}
+ @media only screen and (max-width: 768px)
+{
+	.Contacto{
+		display: none;
+	}
+	.Info__Titulo{
+		transform: translateX(0px);
+	}
+	.Info__Caja1{
+	  background-color: #01486e;
+      width:250px;
+      height:450px;
+      margin: 40px 20px;
+      padding: 10px 10px; 
+      border: 5px;
+      border-style: double;
+      transform: translate(220px,10px);
+}
+.Footer__redes{
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+	padding: 5px;
+	margin: 10px;
+	transform:translatey(-50px)
+}
+
+	
+	.container{ 
+		grid-gap: 0px;
+		padding: 0px;
+		grid-template-rows: 0.3fr 0.1fr 0.5fr 2fr 0.5fr 0.2fr ;
+       grid-template-columns: 4fr ;
+       grid-template-areas:
+       "header"
+       "nav"
+       "articulos"
+       "main"
+       "informacion"      
+       "footer"
+} }
+@media only screen and (max-width: 500px)
+{
+	.Info__Caja1{
+		transform: translate(50px,10px);
+	}
+	.Footer__redes{transform:translate(-50px,-30px);
+    }
+} 
+.Grid__Item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	font-size: 30px;
+	border-radius: 4px; 
+	transition: transform 0.3s ease-in-out; 
+}
+.Grid__Item:hover {
+	filter: opacity(0.7);
+	transform: scale(1.1);
+}
+.Grid__Galeria{
+	display: grid;
+	grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+	grid-auto-rows: minmax(200px,auto);
+	gap:10px;
+    grid-auto-flow: dense;
+}
+@media only screen and (min-width:600px)
+{.ancho{
+	grid-column: 2 span;
+}}

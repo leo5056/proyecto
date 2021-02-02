@@ -1,0 +1,35 @@
+@import "main";
+@import "header";
+@import "informacion";
+@import "footer";
+@import "grid";
+@import "nosotros";
+.Main__titulo1{
+	font-size: 60px;
+    font-family: 'Texturina', serif;
+    text-decoration: underline;
+}
+h2{
+	font-size: 30px;
+	font-family: 'Lemonada', cursive;
+	text-decoration: underline;
+}
+.Articulos_titulo{
+	font-size: 30px;
+	text-decoration: underline;
+	font-family: 'Texturina', serif;
+	text-transform: uppercase;
+}
+.paginas{
+	background-color: #164469;
+}
+html 
+{
+	height: 100%}
+.principal
+{
+	background-color: #017fa7;
+	background-image:url(../assets/imagenes/fondo.jpg);
+	background-repeat:repeat-x;
+	min-height: 100%;
+}

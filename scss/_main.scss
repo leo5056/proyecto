@@ -1,0 +1,25 @@
+ .Main__FlexRow {
+           display: flex;
+           flex-flow: wrap row;
+           justify-content: space-between;
+         .Main__FlexColumn{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+          }
+}
+.Main{
+	grid-area: main; 
+}
+.Main__descripcion{
+	font-size: 20px;
+	font-family: 'Mulish', sans-serif;
+}
+.img:hover {
+	transform: scale(1.3);
+}
+.container > * {
+	/*border: 1px solid;
+	padding: 10px;*/
+	text-align: center;
+}

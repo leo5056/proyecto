@@ -1,0 +1,45 @@
+ ul  
+     { 
+	list-style: none;
+    margin: 0;
+    padding:0;
+    li
+    {
+    display: inline-block;
+    a
+       {
+        color: #0E42B3;
+        text-decoration: none;
+        display: block;
+        padding: 20px;
+        a:hover
+           {
+            background-color: #5D8196; 
+            color:black;
+           }
+        }   
+    }
+}    
+
+.header{ animation-duration: 2s;
+      animation-name: aparecer;
+      padding: 20px;
+      margin-top: 30px;
+    grid-area: header;
+}
+@keyframes aparecer{
+
+0%{
+  opacity: 0;}
+
+100%{
+  opacity: 1;}
+}
+.nav{
+  font-size: 35px;
+  margin: 10px 15px;
+  font-family: 'Dancing Script', cursive;
+  justify-self:end;
+  grid-area: nav;
+  background-color: #D1D5D5;
+}

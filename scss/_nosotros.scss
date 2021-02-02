@@ -1,0 +1,47 @@
+.Grid__text{
+	font-family: cursive;
+	font-size: 20px;
+	padding:10px;
+	border:5px;
+	border-style: dashed; 
+	grid-area:texto;
+	background-color: #2F6998;
+}
+.Grid__mapa{
+	text-align: center;
+	grid-area:mapa;
+}
+.Grid__articulo{
+	@extend .Grid__text;
+	grid-area:articulo;
+}
+.Grid__img{
+	grid-area:img;
+}
+.Nosotros__titulo{
+	@extend .Main__titulo1;
+	text-align: center;
+}
+.Nosotros__titulo2{
+	text-align: center;
+	font-size: 45px;
+	grid-area:titulo;
+}
+.Nosotros__equipo{
+	@extend .Grid__text;
+	text-align: center;
+}
+.Nosotros__imagenes{
+	text-align: center;
+}
+.Grid__nosotros{
+	display: grid;
+	grid-gap:10px;
+	grid-template-rows:1fr 1fr 0.5fr 1fr 0.5fr ;
+	grid-template-columns:2fr 1fr 1fr 1fr 2fr;
+	grid-template-areas:
+	"texto texto texto texto texto"
+	".. .. mapa .. .."
+	".. titulo titulo titulo .. "
+    ".. articulo articulo img img"
+}   				

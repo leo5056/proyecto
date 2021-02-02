@@ -1,0 +1,23 @@
+.Footer{
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+	align-items: center;
+	padding: 5px;
+	margin: 10px;
+	grid-area: footer; 
+	background-color: #4C7697 ;
+}
+.Footer__redes{
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+	padding: 5px;
+	margin: 10px;
+}
+.Footer__redes--logo{
+	margin:5px 5px; 
+ }
+ .Footer__redes--logo:hover{
+ 	transform: scale(1.3);
+ }
