@@ -1,0 +1,110 @@
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory
+[1mdiff --git a/css/styles.css b/css/styles.css[m
+[1mindex a272a65..54732ba 100644[m
+[1m--- a/css/styles.css[m
+[1m+++ b/css/styles.css[m
+[36m@@ -18,7 +18,7 @@[m
+   transform: scale(1.3); }[m
+ [m
+ .container > * {[m
+[31m-  /*border: 1px solid;[m
+[32m+[m[32m  /*border: 1px solid;[m[41m[m
+ 	padding: 10px;*/[m
+   text-align: center; }[m
+ [m
+[36m@@ -66,11 +66,7 @@[m [mul {[m
+   grid-area: informacion; }[m
+ [m
+ .Info__Titulo {[m
+[31m-  transform: translateX(-80px); [m
+[31m-  font-size: 30px;[m
+[31m-  font-family: 'Lemonada', cursive;[m
+[31m-  text-decoration: underline;[m
+[31m-}[m
+[32m+[m[32m  transform: translateX(-80px); }[m
+ [m
+ .Info__Caja1 {[m
+   background-color: #01486e;[m
+[36m@@ -116,12 +112,7 @@[m [mul {[m
+   grid-gap: 10px;[m
+   grid-template-columns: 1fr 2fr;[m
+   grid-template-rows: 200px 0.5fr 3fr 4fr 5fr 100px;[m
+[31m-  grid-template-areas: " header        .."[m
+[31m- " header        nav"[m
+[31m- " articulos   main"[m
+[31m- " informacion main"[m
+[31m- " contacto    main"[m
+[31m- " footer      footer"; }[m
+[32m+[m[32m  grid-template-areas: " header        .." " header        nav" " articulos   main" " informacion main" " contacto    main" " footer      footer"; }[m
+ [m
+ @media only screen and (max-width: 768px) {[m
+   .Contacto {[m
+[36m@@ -149,12 +140,7 @@[m [mul {[m
+     padding: 0px;[m
+     grid-template-rows: 0.3fr 0.1fr 0.5fr 2fr 0.5fr 0.2fr;[m
+     grid-template-columns: 4fr;[m
+[31m-    grid-template-areas: "header"[m
+[31m- "nav"[m
+[31m- "articulos"[m
+[31m- "main"[m
+[31m- "informacion"      [m
+[31m- "footer"; } }[m
+[32m+[m[32m    grid-template-areas: "header" "nav" "articulos" "main" "informacion"       "footer"; } }[m
+ [m
+ @media only screen and (max-width: 500px) {[m
+   .Info__Caja1 {[m
+[36m@@ -224,17 +210,14 @@[m [mul {[m
+   grid-gap: 10px;[m
+   grid-template-rows: 1fr 1fr 0.5fr 1fr 0.5fr;[m
+   grid-template-columns: 2fr 1fr 1fr 1fr 2fr;[m
+[31m-  grid-template-areas: "texto texto texto texto texto"[m
+[31m- ".. .. mapa .. .."[m
+[31m- ".. titulo titulo titulo .. "[m
+[31m- ".. articulo articulo img img"; }[m
+[32m+[m[32m  grid-template-areas: "texto texto texto texto texto" ".. .. mapa .. .." ".. titulo titulo titulo .. " ".. articulo articulo img img"; }[m
+ [m
+ .Main__titulo1, .Nosotros__titulo {[m
+   font-size: 60px;[m
+   font-family: 'Texturina', serif;[m
+   text-decoration: underline; }[m
+ [m
+[31m-em {[m
+[32m+[m[32mh2 {[m
+   font-size: 30px;[m
+   font-family: 'Lemonada', cursive;[m
+   text-decoration: underline; }[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 92da347..3e0089a 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -98,10 +98,13 @@[m
+ 	  </section>[m
+ 	  [m
+ 	<footer class="Footer">[m
+[31m-		<div>[m
+[31m-			<p>copyrigth 2021</p>[m
+[32m+[m		[32m<div class="container-footer">[m
+[32m+[m			[32m<div class="column1">[m
+[32m+[m				[32m<h1>Más informacion de la compañia</h1>[m
+[32m+[m			[32m<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident temporibus quidem aliquid esse nostrum, saepe numquam repellendus recusandae accusantium molestiae consequatur! Facilis, provident placeat quos cupiditate molestiae voluptatum, sed veniam.</p>[m
+[32m+[m			[32m</div>[m
+ 		</div>[m
+[31m-		<div class="Footer__redes">[m
+[32m+[m		[32m<div class="column2">[m
+ 			 <img  class="Footer__redes-logo img img-fluid img-thumbnail" src="assets/imagenes/whatsapp.png" alt="whatsapp">[m
+ 			 <img  class="Footer__redes-logo img img-fluid img-thumbnail" src="assets/imagenes/instagram.png" alt="instagram">[m
+ 			 <img  class="Footer__redes-logo img img-fluid img-thumbnail" src="assets/imagenes/facebook.png" alt="facebook">[m
+[1mdiff --git a/package.json b/package.json[m
+[1mindex b715b44..4e0f2df 100644[m
+[1m--- a/package.json[m
+[1m+++ b/package.json[m
+[36m@@ -6,7 +6,7 @@[m
+   "scripts": {[m
+     "test": "echo \"Error: no test specified\" && exit 1",[m
+     "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",[m
+[31m-    "watch-css": "nodemon -e scss -x \"npm run build-css\"",[m
+[32m+[m[32m    "watch-css": "nodemon -e scss -x \"npm run build-css\""[m
+   },[m
+   "repository": {[m
+     "type": "git",[m
