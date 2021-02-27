@@ -10,9 +10,10 @@
     text-decoration: underline;
 }
 em{
-	font-size: 30px;
-	font-family: 'Lemonada', cursive;
+	font-size: 40px;
+	font-family: 'Texturina', cursive;
 	text-decoration: underline;
+	padding: 25px;
 }
 .Articulos_titulo{
 	font-size: 30px;
@@ -21,20 +22,18 @@ em{
 	text-transform: uppercase;
 }
 .paginas{
-	background-color: #164469;
+	background-color:#5D6161 ;
 }
 html 
 {
 	height: 100%}
 .principal
 {
-	background-color: #017fa7;
-	background-image:url(../assets/imagenes/fondo.jpg);
-	background-repeat:repeat-x;
-	min-height: 100%;
+	background-color: #5D6161;
 }
 .contacto{
 	display: flex;
+	text-decoration: underline;
 	padding: 30px;
 	justify-content:center;
 }

@@ -5,7 +5,7 @@
 	padding: 40px;
 	box-sizing:border-box;
 	grid-area: footer; 
-	background-color: #4C7697 ;
+	background-color: #285656 ;
 }
 .container-footer{
 	display: flex;
@@ -45,6 +45,8 @@
 	@extend .column1
 }
 .pie_footer{
-	background: #5F6C76;
+	background: black;
+	color: white;
+	margin:10px;
 	padding: 20px;
 }

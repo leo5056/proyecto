@@ -2,10 +2,10 @@
 	font-family: cursive;
 	font-size: 20px;
 	padding:10px;
-	border:5px;
+	border:2px;
 	border-style: dashed; 
 	grid-area:texto;
-	background-color: #2F6998;
+	background-color: #5C9B9B;
 }
 .Grid__mapa{
 	text-align: center;
@@ -20,10 +20,14 @@
 }
 .Nosotros__titulo{
 	@extend .Main__titulo1;
+	padding: 20px;
 	text-align: center;
 }
 .Nosotros__titulo2{
+	font-family: 'Texturina', serif;
+    text-decoration: underline;
 	text-align: center;
+	padding-bottom: 20px;
 	font-size: 45px;
 	grid-area:titulo;
 }

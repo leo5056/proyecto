@@ -8,22 +8,35 @@
     display: inline-block;
     a
        {
-        color: #0E42B3;
+        color: white;
         text-decoration: none;
         display: block;
         padding: 20px;
         a:hover
            {
-            background-color: #5D8196; 
+            background-color: #7B6F87; 
             color:black;
            }
         }   
     }
 }    
+.logo{
+  grid-area: logo;
+  font-size: 70px;
+  font-family: "pacifico", "cursive";
+  color: white;
+  padding-top: 70px;
+}
+.color{
+  color: white;
+}
+.wrap{
+  background-color: #6F8787;
+ }
 
 .header{ animation-duration: 2s;
       animation-name: aparecer;
-      padding: 20px;
+      padding-top: 100px;
       margin-top: 30px;
     grid-area: header;
 }
@@ -35,11 +48,13 @@
 100%{
   opacity: 1;}
 }
-.nav{
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: 50px;
   font-size: 35px;
   margin: 10px 15px;
   font-family: 'Dancing Script', cursive;
   justify-self:end;
-  grid-area: nav;
-  background-color: #D1D5D5;
 }

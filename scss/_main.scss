@@ -6,6 +6,7 @@
            display: flex;
            flex-direction: column;
            align-items: center;
+           padding: 35px;
           }
 }
 .Main{
@@ -13,7 +14,8 @@
 }
 .Main__descripcion{
 	font-size: 20px;
-	font-family: 'Mulish', sans-serif;
+	font-family: sans-serif; 
+  padding-top:20px; 
 }
 .img:hover {
 	transform: scale(1.3);
